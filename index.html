@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="preloader"></div>
+
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav--content">
+          <div class="nav--first">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div>
+              <input
+                type="text"
+                placeholder="Search movies"
+                class="nav--input"
+              />
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav--bar"">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>          
+          <div class="nav--user">
+            <div class="nav--name">Arsalan</div>
+            <div><img src="arsu.png" alt="photo" class="nav--img" /></div>
+          </div>
+        </div>
+      </nav>
+      <div class="click--bar">
+        <input
+                type="text"
+                placeholder="Search movies"
+                class="nav--bar__input"
+              />
+              <div>
+                <div class="nav--bar__name">Arsalan</div>
+                <div class="img"><img src="arsu.png" alt="photo" class="nav--bar__img" /></div>
+              </div>
+      </div>
+      <main class="main">
+        <section class="section">
+          <div class="sidebar--cross">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cross">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            <div class="section--logo">ENTERTAINMENT SECTION</div>
+          </div>
+            <ul class="section--list">
+                <li class="newRelease">New Releases</li>
+                <li class="trendingAll">Trending<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="trending" width="23px">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                </svg>
+                </li>
+                <li class="upcoming">Coming Soon</li>
+                <li class="favourites">Favourites</li>
+                <li class="watchlater">Watch later</li>
+              </ul>
+              <hr>
+              <div class="section--comment">
+                <div>Last Activity</div>
+                <div class="lastActivity"></div>
+                <div class="bookActivity"></div>
+            </div>
+        </section>
+        <div class="movie--section">
+          <div class="small-screen">
+              <div class="circle">
+                <div class="circle-1">
+
+                </div>
+              </div>
+          </div>
+
+          <div class="small-sidebar">
+              <ul class="section--list">
+                  <li class="newRelease smallrelease">New Releases</li>
+                  <li class="smalltrending">Trending<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="trending" width="23px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                  </svg>
+                  </li>
+                  <li class="upcoming smallUpcoming">Coming Soon</li>
+                  <li class="smallfavourites">Favourites</li>
+                  <li class="smallwatchlater">Watch later</li>
+              </ul>
+              <hr>
+              <div class="section--comment">
+                  <div>Last Activity</div>
+                  <div class="smallastActivity"></div>
+                  <div class="smallbookActivity"></div>
+              </div>
+          </div>
+          <h1 class="top--title">Trending</h1>
+          <div class="movies" data-user-cards-container>
+            <!-- <div class="movie--img skeleton" ></div> -->
+            <template data-user-template>
+              <div class="movie-1">
+                <div><a href="movie1.html"><img src="" alt="" id="first" class="movie--img" data-img></a></div>
+                <div class="movie--name" data-name></div>
+                <div class="movie--desc" data-genre>Genre:
+                  Action, Adventure, Drama</div>
+              </div>
+            </template>
+
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div>&copy; copyright. All rights reserved</div>
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
